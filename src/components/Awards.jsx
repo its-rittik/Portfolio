@@ -6,7 +6,19 @@ const awards = [
     org: 'Daffodil International University',
     year: '2023',
   },
+  {
+    title: 'Tuition Fee Waiver (75%) - Awarded for academic excellence',
+    org: 'Daffodil International University',
+    year: '2022 – 2026',
+  },
+  {
+    title: 'Erasmus KA171 Exchange Program',
+    org: 'Istanbul Kültür University',
+    year: 'Spring 2025',
+    
+  },
 ];
+
 
 const Awards = () => (
   <div className="max-w-6xl mx-auto px-8 py-16">
@@ -14,7 +26,7 @@ const Awards = () => (
     <div className="h-1 w-16 bg-yellow-500 mb-8"></div>
     <div className="flex flex-col gap-8">
       {awards.map((award, idx) => (
-        <div key={idx} className="bg-[#18192A] rounded-lg p-6 border border-[#23243a] shadow flex flex-col md:flex-row md:items-center md:justify-between">
+        <div key={idx} className="bg-[#18192A] rounded-lg p-6 border border-[#23243a] shadow flex flex-col md:flex-row md:items-center md:justify-between transition-all duration-300 hover:shadow-[0_0_20px_rgba(234,179,8,0.2)] hover:scale-[1.02]">
           <div className="flex flex-col">
             <span className="text-xl font-bold text-yellow-400 mb-1">{award.title}</span>
             <span className="text-gray-300">{award.org}</span>
